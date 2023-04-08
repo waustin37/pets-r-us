@@ -1,12 +1,23 @@
+<!--
+    Title: index.ejs
+    Author: William John Austin
+    Date: 04/08/2023
+    Description: Pets-R-Us Landing Page
+-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+<!--Style Sheets - still looking for a good font, but I'm ok with the ones there now-->
         <link rel="stylesheet" href="/styles/site.css">
         <title>Pets-R-Us</title>
     </head>
+
+
     <body>
         <div class="container">
-            
+
+<!--Navigation-->
             <div class="navbar">
                 <ul>
                     <li><a class="navigation" href="/grooming">Grooming</a></li>
@@ -23,10 +34,14 @@
                     <li><a class="navigation" href="/index">Home</a></li>
                 </ul>
             </div>
+
+<!--Main Image for Landing-->
             <div class="hero-image">
                 <img src="/images/dog-cat-hero.jpg" id="hero-image" alt="Dog Cat Hero">
                 <div class="centered">Pets-R-Us</div>
             </div>
+
+<!--About Us Card-->
             <div class="card" id="about-us">
                 <h2>About Us</h2>
                 <h3 id="about-statement">
@@ -41,6 +56,8 @@
                 </h3>
             </div>
             <hr>
+
+<!--Locations Card-->
             <div class="card" id="locations">
                 <h2 class="card-title">Locations</h2>
                 <div class="card-contents" id="midtown">
@@ -70,6 +87,8 @@
             </div>
             <br>
             <hr>
+
+<!--Pet of the Week Card-->
             <div class="card" id="dog-of-the-week">
                 <h2 class="card-title">Pet of the Week</h2>
                 <h4>Name:</h4>
@@ -84,8 +103,9 @@
                     <img src="/images/cat.jpg" alt="Lucky the Cat" id="cat">
                 </div>
             </div>
-
             <hr>
+
+<!--Testimonials Card-->
             <div class="card" id="testimonials">
                 <h2 class="card-title">Customer Testimonials</h2>
                 <h3 id="subheader">People are raving about us!</h3>
@@ -116,6 +136,8 @@
                 </div>
             </div> <br> 
             <hr>
+
+<!--Contact Form Card-->
             <div class="card" id="contact">
                 <p>Thank you for considering Pets-R-Us for all your pet needs. If you have any questions or feedback, please 
                 don't hesitate to contact us.
@@ -128,14 +150,14 @@
                 </form>
             </div>      
                 <hr>
+
+<!--Footer-->
             <footer>
                 <div class="contact-info">
                       <p>Phone: (555) 123-4567</p>
                       <p id="email">Email: info@petsrus.com</p>
                 </div> 
             </footer>
-
-
         </div>
     </body>
 </html>
