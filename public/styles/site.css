@@ -1,0 +1,230 @@
+.container{
+    background-color:rgb(203, 218, 228) ;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(174, 190, 203);
+}
+#service-card{
+    list-style-type:circle;
+    margin: 10px;
+    background-color: rgb(200, 214, 223);
+    box-shadow: 0 4px 8px 0 rgb(44, 44, 53);
+    transition: 0.3s;
+   
+}
+.services{
+list-style-type:circle;
+padding: 20px;
+float: left;
+}
+#services{
+    margin-top: 50px;
+    width:30%;
+}
+.hidden-list{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+.hidden-navigation {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.hero-image{
+    position: relative;
+    text-align: center;
+    color:white
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+}
+.centered-2{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+}
+#hero-image{
+    width: 100%;
+}
+#cat{
+    width: 45%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 150px;
+    border: 5px solid rgb(60, 63, 93);
+    border-radius: 16px;
+}
+li{
+    float: right;
+}
+
+hr{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid rgb(186, 202, 216);
+}
+.navigation{
+    display: block;
+    text-decoration: none;
+    color: rgb(42, 55, 67);
+    text-align: center;
+    padding: 16px;
+    font-size: large;
+}
+.navigation:hover{
+    background-color: rgb(135, 135, 135);
+    color:rgb(189, 215, 215);
+}
+.header{
+    text-align: left;
+    padding-left: 8%;
+    font-size: 84px;
+    background-color: rgb(186, 202, 216);
+;
+}
+.masthead{
+    text-decoration: none;
+    color: rgb(42, 55, 67);
+}
+h3 {
+    line-height: 1.5em;
+}
+#subheader {
+    text-align: center;
+}
+h2, h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.card {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+.card-contents{
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+#about-us{
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+    padding: 20px;
+}
+#grooming{
+    margin-top: 115px;
+}
+#about-grooming{
+    font-weight:lighter;
+    padding: 20px;
+    line-height: 1.3em;
+    letter-spacing: 2px;
+    border: 1pt solid rgb(43, 43, 43);
+    border-radius: 24px;
+    background-color: rgb(200, 214, 223);
+}
+#meadows{
+    float: inline-end;
+    text-align: right;
+}
+#midtown{
+    float: inline-start;
+}
+#locations{
+    margin-top: 50px;
+}
+#dog-of-the-week{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 10px;
+    padding-left: 30px;
+    line-height:1.5em;
+    padding-bottom: 30px;
+    width: 45%;
+    margin-top: 100px;
+}
+#dog-of-the-week:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#testimonials {
+    margin-top: 100px;
+    background-color: rgb(223, 231, 236);
+    padding: 10px;
+    padding-bottom: 40px;
+}
+.testimonial {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15px;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    width: 55%;
+    background-color: rgb(222, 233, 240);
+}
+#contact{
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    width: 55%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h4{
+    display: inline;
+}
+p{
+    display: inline;
+}
+
+#btnSend{
+  background-color: #04aaa7;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+form{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px ;
+}
+footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgb(186, 202, 216);
+    padding: 20px;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgb(42, 55, 67);
+  }
+  .contact-info {
+    text-align: center;
+  }
+#email{
+    padding-left: 20px;
+}
+
