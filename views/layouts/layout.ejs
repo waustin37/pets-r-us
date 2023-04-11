@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+<!--Passes the Title of the Page from the index.js-->
+        <title><%- title %></title>
+
+<!--Style Sheets - still looking for a good font, but I'm ok with the ones there now-->
+        <link rel="stylesheet" href="/styles/site.css">
+    </head>
+
+<!--Template For the Whole Site, which adds the header and footer to every page-->
+    <body>
+        <div class="container">
+            <%- include('../partials/_header.ejs') %>
+
+            <%- body %>
+            
+            <%- include('../partials/_footer.ejs') %>
+
+        </div>
+    </body>
+</html>
+ 

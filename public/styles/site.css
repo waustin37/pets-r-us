@@ -15,19 +15,16 @@ ul {
     overflow: hidden;
     background-color: rgb(174, 190, 203);
 }
-#service-card{
-    list-style-type:circle;
+#service-card, #boarding-card{
     margin: 10px;
     background-color: rgb(200, 214, 223);
     box-shadow: 0 4px 8px 0 rgb(44, 44, 53);
     transition: 0.3s;
-   
 }
 .services{
-list-style-type:circle;
-padding: 20px;
-float: left;
-}
+    padding: 20px;
+    float: left;
+    }
 #services{
     margin-top: 50px;
     width:30%;
@@ -50,14 +47,14 @@ float: left;
 .hero-image{
     position: relative;
     text-align: center;
-    color:white
 }
-.centered{
+.centered-1{
     position: absolute;
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
     font-size: 110px;
+    color:white;
 }
 .centered-2{
     position: absolute;
@@ -65,6 +62,15 @@ float: left;
     left: 75%;
     transform: translate(-50%, -50%);
     font-size: 110px;
+    color:white;
+}
+.centered-3{
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color:rgb(49, 43, 43);
 }
 #hero-image{
     width: 100%;
@@ -80,12 +86,17 @@ float: left;
 li{
     float: right;
 }
-
 hr{
     width: 60%;
     margin-right: auto;
     margin-left: auto;
     border: 3px solid rgb(186, 202, 216);
+}
+.boarding-hr{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid #082d4e;
 }
 .navigation{
     display: block;
@@ -98,16 +109,6 @@ hr{
 .navigation:hover{
     background-color: rgb(135, 135, 135);
     color:rgb(189, 215, 215);
-}
-.header{
-    text-align: left;
-    padding-left: 8%;
-    font-size: 84px;
-    background-color: rgb(186, 202, 216);
-}
-.masthead{
-    text-decoration: none;
-    color: rgb(42, 55, 67);
 }
 h3 {
     line-height: 1.5em;
@@ -135,10 +136,10 @@ h2, h1 {
     transition: 0.3s;
     padding: 20px;
 }
-#grooming{
+#grooming, #boarding{
     margin-top: 115px;
 }
-#about-grooming{
+#about-grooming, #about-boarding{
     font-weight:lighter;
     padding: 20px;
     line-height: 1.3em;
@@ -147,6 +148,7 @@ h2, h1 {
     border-radius: 24px;
     background-color: rgb(200, 214, 223);
 }
+
 #meadows{
     float: inline-end;
     text-align: right;
