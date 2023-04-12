@@ -5,45 +5,14 @@
     Description: Styling for Pets-R-Us 
 */
 
+
+
+/* Global Background Color */
 .container{
-    background-color:rgb(203, 218, 228) ;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(174, 190, 203);
-}
-#service-card, #boarding-card{
-    margin: 10px;
-    background-color: rgb(200, 214, 223);
-    box-shadow: 0 4px 8px 0 rgb(44, 44, 53);
-    transition: 0.3s;
-}
-.services{
-    padding: 20px;
-    float: left;
-    }
-#services{
-    margin-top: 50px;
-    width:30%;
-}
-.hidden-list{
-    display: none;
-    list-style: none;
-    position: absolute;
-    background-color: #fff;
-    padding: 0;
-    margin: 0;
-}
-.hidden-navigation {
-    display: block;
-    padding: 10px;
-    color: #333;
-    text-decoration: none;
+    background-color:rgb(203, 218, 228);
 }
 
+/* Styling for Images */
 .hero-image{
     position: relative;
     text-align: center;
@@ -72,6 +41,14 @@ ul {
     font-size: 110px;
     color:rgb(49, 43, 43);
 }
+.centered-4{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color:white;
+}
 #hero-image{
     width: 100%;
 }
@@ -83,9 +60,9 @@ ul {
     border: 5px solid rgb(60, 63, 93);
     border-radius: 16px;
 }
-li{
-    float: right;
-}
+
+
+/* Styling for Horizontal Lines */
 hr{
     width: 60%;
     margin-right: auto;
@@ -98,7 +75,10 @@ hr{
     margin-left: auto;
     border: 3px solid #9393B8;
 }
+
+/* Styling for Navigation */
 .navigation{
+    float: right;
     display: block;
     text-decoration: none;
     color: rgb(42, 55, 67);
@@ -106,20 +86,58 @@ hr{
     padding: 16px;
     font-size: large;
 }
+#navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(174, 190, 203);
+}
 .navigation:hover{
     background-color: rgb(135, 135, 135);
     color:rgb(189, 215, 215);
 }
-h3 {
-    line-height: 1.5em;
+.hidden-list{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
 }
+.hidden-navigation {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* Styling for Text */
 #subheader {
     text-align: center;
+}
+h4{
+    display: inline;
+}
+p{
+    display: inline;
 }
 h2, h1 {
     text-align: center;
     text-transform: uppercase;
 }
+h3 {
+    line-height: 1.5em;
+}
+.note{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 10pt;
+}
+
+/* Styling for a General Card */
 .card {
     width: 60%;
     margin-left: auto;
@@ -130,16 +148,18 @@ h2, h1 {
     padding-top: 10px;
     padding-bottom: 40px;
 }
+
+/* Styling for Specific Cards */
 #about-us{
     margin-top: 50px;
     box-shadow: 0 4px 8px 0 black;
     transition: 0.3s;
     padding: 20px;
 }
-#grooming, #boarding{
+#grooming, #boarding, #training{
     margin-top: 115px;
 }
-#about-grooming, #about-boarding{
+#about-grooming, #about-boarding, #about-training{
     font-weight:lighter;
     padding: 20px;
     line-height: 1.3em;
@@ -148,7 +168,67 @@ h2, h1 {
     border-radius: 24px;
     background-color: rgb(200, 214, 223);
 }
-
+#grooming-card, #boarding-card{
+    background-color: rgb(200, 214, 223);
+    box-shadow: 0 4px 8px 0 rgb(44, 44, 53);
+    transition: 0.3s;
+    list-style-type: none;
+    overflow: hidden;
+}
+.services{
+    margin-top: 15px;
+    padding: 20px;
+    float: left;
+    }
+#boarding-services-master{
+    margin-top: 50px;
+    width:50%;
+}
+#grooming-services-master{
+    margin-top: 50px;
+}
+#trainer{
+    box-shadow: 5px 10px 18px 0 rgb(59, 61, 67);
+    transition: 0.3s;
+    padding: 10px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    width: 45%;
+    background-color: rgb(156, 162, 184);
+    border-radius: 38px;
+    border: 2px solid black
+}
+#trainer-title{
+    margin-top: 50px;
+    width: 50%;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#trainer-bio{
+    line-height: 1.5em;
+    margin-top: 20px;
+    color: #333;
+    font-size: 14pt;
+    padding: 10px;
+}
+.training-prices-card {
+    display: inline-block;
+    margin-top: 15px;
+    width: 28%;
+    padding: 10px;
+    margin-left: 30px;
+}
+#training-prices-master{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background-color: rgb(198, 219, 240);;
+    border: 8px solid rgb(186, 202, 216);
+}
+.training-service{
+line-height: 1.2em;
+}
 #meadows{
     float: inline-end;
     text-align: right;
@@ -188,6 +268,8 @@ h2, h1 {
     width: 55%;
     background-color: rgb(222, 233, 240);
 }
+
+/* Styling for Contact Form on Landing */
 #contact{
     margin-left: auto;
     margin-right: auto;
@@ -197,13 +279,6 @@ h2, h1 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-h4{
-    display: inline;
-}
-p{
-    display: inline;
-}
-
 #btnSend{
   background-color: #04aaa7;
   border: none;
@@ -219,6 +294,8 @@ form{
     margin-right: auto;
     margin-top:30px ;
 }
+
+/* Styling for Footer */
 footer {
     margin-top: 50px;
     width: 100%;
@@ -229,7 +306,7 @@ footer {
     line-height: 1.5;
     color: rgb(42, 55, 67);
   }
-  .contact-info {
+.contact-info {
     text-align: center;
   }
 #email{
