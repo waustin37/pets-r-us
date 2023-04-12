@@ -180,6 +180,10 @@ h3 {
     padding: 20px;
     float: left;
     }
+#boarding-card{
+    background-color: rgba(78, 124, 153, 0.374);
+    padding-left: 80px;
+    }
 #boarding-services-master{
     margin-top: 50px;
     width:50%;
