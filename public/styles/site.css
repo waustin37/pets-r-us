@@ -10,6 +10,7 @@
 /* Global Background Color */
 .container{
     background-color:rgb(203, 218, 228);
+
 }
 
 /* Styling for Images */
@@ -49,6 +50,14 @@
     font-size: 110px;
     color:white;
 }
+.centered-5{
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color:white;
+}
 #hero-image{
     width: 100%;
 }
@@ -60,6 +69,7 @@
     border: 5px solid rgb(60, 63, 93);
     border-radius: 16px;
 }
+
 
 
 /* Styling for Horizontal Lines */
@@ -179,6 +189,7 @@ h3 {
     margin-top: 15px;
     padding: 20px;
     float: left;
+    margin-right: 15px;
     }
 #boarding-card{
     background-color: rgba(78, 124, 153, 0.374);
@@ -190,6 +201,7 @@ h3 {
 }
 #grooming-services-master{
     margin-top: 50px;
+    width: 25%;
 }
 #trainer{
     box-shadow: 5px 10px 18px 0 rgb(59, 61, 67);
@@ -273,6 +285,34 @@ line-height: 1.2em;
     background-color: rgb(222, 233, 240);
 }
 
+#registrationForm{
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    padding: 20px;
+    background-color: rgb(222, 233, 240);
+    border: 3pt solid rgba(11, 37, 61, 0.647);
+    border-radius: 18px;
+    height: 500px;
+}
+.registrationInput{
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 10px;
+    font-size: 14pt;
+    width: 80%;
+    border: 1px solid rgb(110, 129, 150);
+    border-radius: 18px;
+}
+.registrationLabel{ 
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    color: rgb(0, 0, 0);
+    font-size: 18pt;
+    
+}
+
 /* Styling for Contact Form on Landing */
 #contact{
     margin-left: auto;
@@ -292,6 +332,47 @@ line-height: 1.2em;
   margin: 4px 2px;
   cursor: pointer;
 }
+#btnRegister{
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    font-size: 18pt;
+    width: 500px;
+    text-transform: capitalize;
+    background-color: rgb(159, 201, 238);
+    box-shadow: 0 8px 16px 0 rgb(42, 37, 37);
+    font-family:'Times New Roman', Times, serif;
+
+}
+#btnRegister:hover {
+    background-color: rgb(135, 135, 135);
+    transition: .4s;
+}
+.button{
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#btnSubmitRegistration {
+    cursor: pointer;
+    border: none;
+    margin-top: 25px;
+    padding: 16px 32px;
+    width: 60%;
+    font-size: 16pt;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(159, 201, 238);
+    box-shadow: 0 8px 16px 0 rgb(99, 110, 126);
+    border-radius: 18px;
+    
+}
+#btnSubmitRegistration:hover{
+    background-color: rgb(135, 135, 135);
+    transition: .4s;
+}
+
 form{
     text-align: center;
     margin-left: auto;
