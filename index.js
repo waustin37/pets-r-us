@@ -93,12 +93,13 @@ app.get('/registration', (req, res) => {
 })
 
 app.post('/register', (req, res, next) => {
-    const customerId = req.body.customerId;
-    const email = req.body.email;
+    console.log(req.body);
+    console.log(req.body.customerId);
+    console.log(req.body.email);
     const newCustomer = new Customer({
-        customerId,
-        email
-    })
+      customerId: req.body.customerId,
+      email: req.body.email,
+    });
 
     console.log(newCustomer);
 
