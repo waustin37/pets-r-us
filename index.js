@@ -107,7 +107,7 @@ app.post('/register', (req, res, next) => {
             console.log(err);
             next(err);
         } else {
-            res.render('/index', {
+            res.render('index', {
                 title: 'Welcome to Pets-R-Us!'
             })
         }
