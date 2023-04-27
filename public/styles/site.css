@@ -106,6 +106,7 @@ hr{
 .navigation:hover{
     background-color: rgb(135, 135, 135);
     color:rgb(189, 215, 215);
+    transition: .3s;
 }
 .hidden-list{
     display: none;
