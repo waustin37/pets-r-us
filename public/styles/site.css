@@ -239,7 +239,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     width: 85%;
-    background-color: rgb(198, 219, 240);;
+    background-color: rgb(198, 219, 240);
     border: 8px solid rgb(186, 202, 216);
 }
 .training-service{
@@ -398,3 +398,33 @@ footer {
     padding-left: 20px;
 }
 
+th{
+    background-color: rgb(174, 190, 203);
+}
+
+th, td {
+border: 1px solid rgb(120, 124, 153);
+padding: 10px;
+}
+
+tr:hover{
+    background-color: rgb(174, 190, 203);
+    cursor: pointer;
+
+}
+table{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(198, 219, 240);
+    padding: 10px;
+    border: 2px solid rgb(120, 124, 153);
+    border-collapse: collapse;
+}
+#customer-list{
+    margin-top: 50px;
+    box-shadow: 0 8px 16px 0 rgb(99, 110, 126);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 40%;
+}

@@ -1,0 +1,37 @@
+<!--Main Image for Customer List-->
+<div class="hero-image">
+    <img src="/images/customer.jpg" id="hero-image" alt="Cat on a Computer">
+    <div class="centered-5">Customers</div>
+</div>
+
+<br><br>
+<h1>Customer List</h1>
+<hr>
+<br>
+
+<div class="card" id="customer-list">
+    <% if(customers.length > 0){ %>
+    <table class="table">
+        <tr>
+            <th>User Name</th>
+            <th>Email</th>
+        </tr>
+        <tbody>
+            <% customers.forEach(function(customer){ %>
+        <tr>
+            <td>
+                <%= customer.customerId %>
+            </td>
+            <td>
+                <%= customer.email %>
+            </td>
+        </tr>
+        <% }) %>
+        </tbody>
+    </table>
+    <% } else { %>
+        <h3 style="text-align: center; padding: 10px; font-size: 16pt; font-weight: 100;">
+            Customers have not been added to the MongoDB Database.<br>Try Adding Some!
+        </h3>
+        <% } %> 
+</div>

@@ -84,6 +84,21 @@ app.get('/boarding', (req, res) => {
     })
 })
 
+app.get('/customers', (req, res) => {
+    Customer.find({}, function(err, customers){
+        if (err) {
+            console.log(err);
+            next(err);
+        } else {
+            res.render('customer-list', {
+                title: 'Pets-R-Us Customer List',
+                message: 'Customer List',
+                customers: customers
+            })
+        }
+    })   
+})
+
 //If server receives <petsrus/registration> they will be routed to the registration page
 app.get('/registration', (req, res) => {
     res.render('registration', {
