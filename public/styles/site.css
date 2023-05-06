@@ -58,6 +58,14 @@
     font-size: 110px;
     color:white;
 }
+.centered-6 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color:white;
+}
 #hero-image{
     width: 100%;
 }
@@ -170,7 +178,7 @@ h3 {
 #grooming, #boarding, #training{
     margin-top: 115px;
 }
-#about-grooming, #about-boarding, #about-training{
+#about-grooming, #about-boarding, #about-training, #about-customers, #about-appointment{
     font-weight:lighter;
     padding: 20px;
     line-height: 1.3em;
@@ -308,10 +316,30 @@ line-height: 1.2em;
 .registrationLabel{ 
     width: 60%;
     margin-top: 20px;
-    margin-bottom: -10px;
+    margin-bottom: -15px;
     color: rgb(0, 0, 0);
     font-size: 18pt;
     
+}
+.appointmentLabel{ 
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: -15px;
+    color: rgb(0, 0, 0);
+    font-size: 18pt;
+}
+
+#appointmentForm{
+    background-color: aqua;
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    padding-bottom: 40px;
+    border: 3pt solid rgba(11, 37, 61, 0.647);
+    border-radius: 18px;
+    background-color: rgb(222, 233, 240);
 }
 
 /* Styling for Contact Form on Landing */

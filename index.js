@@ -12,6 +12,7 @@ const express = require('express');
 const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
 const pino = require('pino');
+const fs = require('fs');
 
 
 const mongoose = require('mongoose');
@@ -23,8 +24,9 @@ mongoose.connect(CONN).then(() => {
 });
 
 
-//Importing our Customer Schema 
+//Importing our Schemas 
 const Customer = require('./models/customer');
+const Appointment = require('./models/appointments');
 
 //Allows us to use Express 
 const app = express();
@@ -130,10 +132,38 @@ app.post('/register', (req, res, next) => {
     })
 })
 
+app.get('/appointments', (req, res) => {
+    let jsonFile = fs.readFileSync('./public/data/services.json');
+    let services = JSON.parse(jsonFile);
 
+    console.log(services);
 
+    res.render('appointments', {
+        title: 'Pets-R-Us Appointment Booking', 
+        message: 'Book with Pets-R-Us!',
+        services: services
+    })
+});
 
-
+app.post('/appointment-booked', (req, res, next) => {
+    const newAppointment = new Appointment({
+        customerId: req.body.customerId,
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        service: req.body.service,
+    })
+    Appointment.create(newAppointment, function(err, appointment){
+        if (err) {
+            console.log(err);
+            next(err);
+        } else {
+            res.render('index',{
+                title: 'Welcome to Pets-R-Us!'
+            })
+        }
+    })
+})
 
 //Listening to the PORT server we established earlier
 app.listen(PORT, () => {
