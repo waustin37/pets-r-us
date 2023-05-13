@@ -66,6 +66,14 @@
     font-size: 110px;
     color:white;
 }
+.centered-7 {
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 110px;
+    color:rgb(0, 0, 0);
+}
 #hero-image{
     width: 100%;
 }
@@ -436,6 +444,44 @@ border: 1px solid rgb(120, 124, 153);
 padding: 10px;
 }
 
+#table-header{
+    text-align: center;
+}
+
+.form{
+    border: 1.5px solid rgb(120, 124, 153);
+    background-color: rgb(186, 202, 216);
+    border-radius: 8%;
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-field{
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+#email-label {
+    letter-spacing: 1.5px;
+    line-height: 2px;
+}
+
+#search{
+    background-color: #04aaa7;
+    font-size: 11pt;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#email{
+    padding: 10px;
+    width: 40%;
+}
 tr:hover{
     background-color: rgb(174, 190, 203);
     cursor: pointer;

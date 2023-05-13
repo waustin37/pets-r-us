@@ -165,6 +165,25 @@ app.post('/appointment-booked', (req, res, next) => {
     })
 })
 
+//If server receives <petsrus/my-appointments> they will be routed to the Currently Booked Appts page
+app.get('/my-appointments', (req, res) => {
+    res.render('my-appointments', {
+        title: 'Pets-R-Us Appointments',
+        message: 'Here are the Appointments You Booked'
+    })
+})
+
+app.get('/api/appointments/:email', async(req, res, next) => {
+    Appointment.find({ email: req.params.email}, function(err, appointments) {
+        if (err) {
+            console.log(err);
+            next(err);
+        } else {
+            res.json(appointments);
+        }
+    })
+})
+
 //Listening to the PORT server we established earlier
 app.listen(PORT, () => {
     console.log('Application started and listening on PORT ' + PORT);
