@@ -3,7 +3,8 @@
     Title: index.js, 
     Author: William Austin
     Date: 04/08/2023
-    Description: The Background on our Pets-R-Us site. Establishing a server and telling Node what to use and how to use it
+    Description: The Background on our Pets-R-Us site. 
+                Establishing a server and telling Node what to use and how to use it
 */
 
 
