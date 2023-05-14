@@ -18,6 +18,10 @@
     "mongoose": "^6.5.0",
     "pino": "^8.11.0"
   },
+  "engines": {
+    "node": "19.8.1",
+    "npm": "9.5.1"
+  },
   "devDependencies": {
     "nodemon": "^2.0.22"
   }
